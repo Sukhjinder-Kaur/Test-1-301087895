@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 
 namespace Test_1_301087895
-{/**
+{/*
      * <summary>
      * This abstract class is a blueprint for all Lotto Games
      * </summary>
-     * 
      * @class LottoGame
      * @property {int} ElementNum;
      * @property {int} SetSize;
@@ -17,11 +16,62 @@ namespace Test_1_301087895
     {
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE private fields here --------------------------------------------
+        private List<int> _elementList;
+        private int _elementNumber;
+        private List<int> _numberList;
+        private Random _random;
+        private int _setSize;
 
         // PUBLIC PROPERTIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE public properties here -----------------------------------------
+        public List<int> ElementList
+        {
+            get
+
+            {
+                return _elementList;
+
+            }
+
+        }
+        public int ElementNumber
+        {
+            get
+            {
+                return _elementNumber;
+            }
+            set
+            {
+                _elementNumber = value;
+            }
+        }
+        public List<int> NumberList
+        {
+            get
+            {
+                return _numberList;
+            }
+
+        }
+        public Random random
+        {
+            get
+            {
+                return _random;
+            }
+
+        }
+        public int SetSize
+        {
+            get
+            {
+                return _setSize;
+            }
+            set
+            {
+                _setSize = value;
+            }
+        }
 
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -50,13 +100,22 @@ namespace Test_1_301087895
             // call the _build method
             this._build();
         }
-
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        private void _initialize()
+        {
+            _numberList=new List<int>();
+            _elementList = new List<int>();
+            _random = new Random();
+        }
 
-        // CREATE the private _initialize method here -----------------------------
-
-        // CREATE the private _build method here -----------------------------------
-
+        private void _build()
+        { 
+            int i=0;
+            while (i < SetSize)
+            {
+                NumberList.Add(i++);
+            }
+        }
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         /**
@@ -83,9 +142,17 @@ namespace Test_1_301087895
 
             return lottoNumberString;
         }
-
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        public void PickElements()
+        {
+            if (ElementList.Count > 0)
+            {
+                ElementList.Clear();
+                NumberList.Clear();
+                _build();
 
-        // CREATE the public PickElements method here ----------------------------
+            }
+           
+        }
     }
 }
