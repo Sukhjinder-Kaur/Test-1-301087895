@@ -111,8 +111,8 @@ namespace Test_1_301087895
 
         private void _build()
         { 
-            int i=0;
-            while (i < SetSize)
+            int i=1;
+            while (i <= SetSize)
             {
                 NumberList.Add(i++);
             }
@@ -153,14 +153,13 @@ namespace Test_1_301087895
                 _build();
 
             }
-
-            int i = 0;
-            while (i<ElementNumber)
+            int j = 0;
+            while (j < ElementNumber)
             {
+                j++;
                 int randNumber = _random.Next(NumberList.Count);
                 NumberList.Remove(randNumber);
                 ElementList.Add(randNumber);
-                i++;
             }
 
             ElementList.Sort();

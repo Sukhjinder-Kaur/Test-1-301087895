@@ -30,7 +30,14 @@ namespace Test_1_301087895
         // CREATE the public GenerateLottoNumbers method here ----------------
         public void GenerateLottoNumbers()
         {
-            
+            int t = 1;
+            while (t <= 7)
+            {
+                Console.Write($"Ticket {t}: ");
+                Console.WriteLine(ToString());
+                PickElements();
+                t++;
+            }
         }
     }
 }

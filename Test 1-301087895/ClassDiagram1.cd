@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Test_1_301087895.Lotto649">
-    <Position X="5.5" Y="3.25" Width="2.25" />
+    <Position X="5.5" Y="3.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Lotto649.cs</FileName>
@@ -16,7 +16,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Test_1_301087895.LottoMax">
-    <Position X="5.5" Y="1.25" Width="2.25" />
+    <Position X="5.5" Y="1.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>LottoMax.cs</FileName>
