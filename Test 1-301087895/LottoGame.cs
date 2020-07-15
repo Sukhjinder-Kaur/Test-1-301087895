@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace Test_1_301087895
 {/*
@@ -152,7 +153,17 @@ namespace Test_1_301087895
                 _build();
 
             }
-           
+
+            int i = 0;
+            while (i<ElementNumber)
+            {
+                int randNumber = _random.Next(NumberList.Count);
+                NumberList.Remove(randNumber);
+                ElementList.Add(randNumber);
+                i++;
+            }
+
+            ElementList.Sort();
         }
     }
 }

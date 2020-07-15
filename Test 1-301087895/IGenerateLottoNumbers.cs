@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Test_1_301087895
 {
-
     public interface IGenerateLottoNumbers
     {
+        void GenerateLottoNumbers();
     }
 }

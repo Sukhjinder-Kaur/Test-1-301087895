@@ -29,7 +29,10 @@ namespace Test_1_301087895
         {
 
         }
-
         // CREATE the public GenerateLottoNumbers method here ----------------
+        public void GenerateLottoNumbers()
+        {
+           
+        }
     }
 }
