@@ -97,7 +97,7 @@ namespace Test_1_301087895
             // assign elementNumber local variable to the ElementNumber property
             this.ElementNumber = elementNumber;
 
-            // assign setSize local variable tot he SetSize property
+            // assign setSize local variable to the SetSize property
             this.SetSize = setSize;
 
             // call the _initialize method
@@ -162,7 +162,7 @@ namespace Test_1_301087895
             int j = 0;
             while (j < ElementNumber)
             {
-                int randPosition = random.Next(NumberList.Count);
+                int randPosition = _random.Next(NumberList.Count);
                 ElementList.Add(NumberList[randPosition]);
                 NumberList.Remove(NumberList[randPosition]);
                 j++;
