@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*Name=Sukhjinder Kaur
+Student number= 301087895
+Date last Modified = 15 / 07 / 2020
+Program description= This is the derived class of LottoGames*/
+
 namespace Test_1_301087895
 {
     /**
