@@ -114,7 +114,8 @@ namespace Test_1_301087895
             int i=1;
             while (i <= SetSize)
             {
-                NumberList.Add(i++);
+                NumberList.Add(i);
+                i++;
             }
         }
         // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -156,10 +157,10 @@ namespace Test_1_301087895
             int j = 0;
             while (j < ElementNumber)
             {
+                int randPosition = random.Next(NumberList.Count);
+                ElementList.Add(NumberList[randPosition]);
+                NumberList.Remove(NumberList[randPosition]);
                 j++;
-                int randNumber = _random.Next(NumberList.Count);
-                NumberList.Remove(randNumber);
-                ElementList.Add(randNumber);
             }
 
             ElementList.Sort();

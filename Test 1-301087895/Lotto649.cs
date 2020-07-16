@@ -35,10 +35,10 @@ namespace Test_1_301087895
         {
             int t = 1;
             while (t <=6)
-            { 
+            {
+                PickElements();
                 Console.Write($"Ticket {t}: ");
                 Console.WriteLine(ToString());
-                PickElements();
                 t++;
             }
         }
